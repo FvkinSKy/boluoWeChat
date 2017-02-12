@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+        <bean id="eb1" class="container.instantation.ExampleBean"/>
+        <bean id="date1" class="java.util.Date"/>
+
+        <!--
+                使用静态工厂创建对象
+        -->
+        <!--<bean id="cal1" class="java.util.Calendar" factory-method="getInstance"/>-->
+</beans>

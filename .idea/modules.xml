@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ Commons_Configuration/Commons_Configuration.iml" filepath="$PROJECT_DIR$/ Commons_Configuration/Commons_Configuration.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ Design_modol/Design_modol.iml" filepath="$PROJECT_DIR$/ Design_modol/Design_modol.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Guava_Study/Guava_Study.iml" filepath="$PROJECT_DIR$/Guava_Study/Guava_Study.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ Java_Web_Demo/Java_Web_Demo.iml" filepath="$PROJECT_DIR$/ Java_Web_Demo/Java_Web_Demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lambda_study/Lambda_study.iml" filepath="$PROJECT_DIR$/Lambda_study/Lambda_study.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Servlet01/Servlet01.iml" filepath="$PROJECT_DIR$/Servlet01/Servlet01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Thread_Study/Thread_Study.iml" filepath="$PROJECT_DIR$/Thread_Study/Thread_Study.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ enum_Demo/enum_Demo.iml" filepath="$PROJECT_DIR$/ enum_Demo/enum_Demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mac_Test/mac_Test.iml" filepath="$PROJECT_DIR$/mac_Test/mac_Test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/maven_test/maven_test.iml" filepath="$PROJECT_DIR$/maven_test/maven_test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ reflect_Demo/reflect_Demo.iml" filepath="$PROJECT_DIR$/ reflect_Demo/reflect_Demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ springDemo01/springDemo01.iml" filepath="$PROJECT_DIR$/ springDemo01/springDemo01.iml" />
+    </modules>
+  </component>
+</project>
