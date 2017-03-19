@@ -13,5 +13,14 @@
 		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.2.xsd
 		http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd
 		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.2.xsd">
-        <context:component-scan base-package="container.instantation"/>
+        <context:component-scan base-package="aop.entity"/>
+        
+        <aop:config>
+                <aop:aspect ref="aopTest">
+                        <aop:before method="test1" pointcut="execution(* aop.entity.AopTest.test1(..))"/>
+                        <aop:before method="test2" pointcut="execution(* aop.entity.AopTest.test2(..))"/>
+                        <aop:after-returning method="test3" pointcut="execution(* aop.entity.AopTest.test3(..))"/>
+                        <!--<aop:after-throwing method="test4" pointcut="execution(* aop.entity.AopTest.test4(..))"/>-->
+                </aop:aspect>
+        </aop:config>
 </beans>

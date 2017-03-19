@@ -24,4 +24,13 @@
     <url-pattern>/register</url-pattern>
   </servlet-mapping>
 
+   <servlet>
+       <servlet-name>emp</servlet-name>
+       <servlet-class>Service.EmpServlet</servlet-class>
+   </servlet> 
+  
+    <servlet-mapping>
+        <servlet-name>emp</servlet-name>
+        <url-pattern>/find</url-pattern>
+    </servlet-mapping>
 </web-app>
