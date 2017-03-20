@@ -2,12 +2,14 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/ Base64Demo/Base64Demo.iml" filepath="$PROJECT_DIR$/ Base64Demo/Base64Demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/ Commons_Configuration/Commons_Configuration.iml" filepath="$PROJECT_DIR$/ Commons_Configuration/Commons_Configuration.iml" />
       <module fileurl="file://$PROJECT_DIR$/ Design_modol/Design_modol.iml" filepath="$PROJECT_DIR$/ Design_modol/Design_modol.iml" />
       <module fileurl="file://$PROJECT_DIR$/Guava_Study/Guava_Study.iml" filepath="$PROJECT_DIR$/Guava_Study/Guava_Study.iml" />
       <module fileurl="file://$PROJECT_DIR$/ JSP_Demo/JSP_Demo.iml" filepath="$PROJECT_DIR$/ JSP_Demo/JSP_Demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/ Java_Web_Demo/Java_Web_Demo.iml" filepath="$PROJECT_DIR$/ Java_Web_Demo/Java_Web_Demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lambda_study/Lambda_study.iml" filepath="$PROJECT_DIR$/Lambda_study/Lambda_study.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ POITest/POITest.iml" filepath="$PROJECT_DIR$/ POITest/POITest.iml" />
       <module fileurl="file://$PROJECT_DIR$/Servlet01/Servlet01.iml" filepath="$PROJECT_DIR$/Servlet01/Servlet01.iml" />
       <module fileurl="file://$PROJECT_DIR$/Thread_Study/Thread_Study.iml" filepath="$PROJECT_DIR$/Thread_Study/Thread_Study.iml" />
       <module fileurl="file://$PROJECT_DIR$/ Translation/Translation.iml" filepath="$PROJECT_DIR$/ Translation/Translation.iml" />
