@@ -19,6 +19,7 @@ public class YouDaoTransLation {
     public static void main(String[] args) {
         String result = PostUtil.connTool(param + trans, APIPATH);//返回类型为json
         JSONObject obj=JSON.parseObject(result);
+        System.out.println(obj);
         System.out.println(obj.getString("translation"));
     }
 }
