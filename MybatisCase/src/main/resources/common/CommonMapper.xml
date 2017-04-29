@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"
+        "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+<!--通用映射文件，用于无实体类的DQL,DML操作-->
+<mapper namespace="com.dao.CommonDao">
+    <select id="findCost" resultType="java.util.Map">
+        select * from COST
+    </select>
+
+    <select id="findCostById" parameterType="int" resultType="java.util.Map">
+        select * from COST where COST_ID=#{id}
+    </select>
+
+    <update id="updCost">
+        update COST
+        set NAME = #{name}
+        where COST_ID= #{id}
+    </update>
+
+    <select id="findCostByName" parameterType="String" resultType="java.util.Map">
+        select * from COST where NAME = #{name}
+    </select>
+
+    <select id="findCostByIdAndName" resultType="java.util.Map">
+        select * from COST WHERE COST_ID=#{id} and NAME=#{name}
+    </select>
+
+    <delete id="delCostById" parameterType="int">
+        DELETE FROM  COST where COST_ID=#{id}
+    </delete>
+
+    <!--动态SQL if-->
+    <select id="findAllAdmin" resultType="java.util.Map">
+        select * from ADMIN_INFO where ADMIN_ID=#{id}
+        <if test="name!=null">
+            and NAME like #{name}
+        </if>
+    </select>
+
+    <select id="testDual" resultType="java.util.Map">
+        select sysdate from dual
+    </select>
+
+    <select id="testEL" resultType="java.util.Map">
+        select * from ADMIN_INFO WHERE TELEPHONE=#{num}
+        <if test="id!=null and id !=0">
+            AND ADMIN_ID=#{id}
+        </if>
+
+        <choose>
+            <when test="pwd!=null and pwd!=''">
+                and PASSWORD=#{pwd}
+            </when>
+            <when test="name!=null">
+                and name like #{name}
+            </when>
+            <otherwise>
+                and EMAIL is NOT NULL
+            </otherwise>
+        </choose>
+    </select>
+
+    <select id="testWHERE" resultType="java.util.Map">
+        select * from ADMIN_INFO
+        <where>
+            <if test="id!=null">
+                ADMIN_ID=#{id}
+            </if>
+            <if test="name!=null and name!=''">
+                AND name like #{name}
+            </if>
+        </where>
+    </select>
+</mapper>

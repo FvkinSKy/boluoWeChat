@@ -12,6 +12,7 @@
     <file type="web" url="file://$USER_HOME$/Downloads/MybatisCase" />
     <file type="web" url="file://$PROJECT_DIR$/ springDemo01" />
     <file type="web" url="file://$PROJECT_DIR$/maven_test" />
+    <file type="web" url="file://$PROJECT_DIR$/MybatisCase" />
     <file type="web" url="file://$PROJECT_DIR$/Servlet01" />
   </component>
   <component name="MavenProjectsManager">
@@ -19,7 +20,7 @@
       <list>
         <option value="$PROJECT_DIR$/maven_test/pom.xml" />
         <option value="$PROJECT_DIR$/ springDemo01/pom.xml" />
-        <option value="$USER_HOME$/Downloads/MybatisCase/pom.xml" />
+        <option value="$PROJECT_DIR$/MybatisCase/pom.xml" />
       </list>
     </option>
   </component>

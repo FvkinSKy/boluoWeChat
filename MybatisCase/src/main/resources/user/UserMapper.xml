@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"
+        "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+<!--命名空间为对应的dao层接口-->
+<mapper namespace="com.dao.UserDao">
+    <!--按照ID查找-->
+    <select id="findById" parameterType="int" resultType="com.entity.User">
+        SELECT *
+        FROM user_czh
+        WHERE ID = #{id}
+    </select>
+
+    <!--模糊查询-->
+    <select id="findByName" parameterType="String" resultType="com.entity.User">
+        SELECT *
+        FROM USER_CZH
+        WHERE NAME LIKE #{name}
+    </select>
+
+    <select id="findAll" resultType="com.entity.User">
+        SELECT *
+        FROM USER_CZH
+    </select>
+
+    <!--查询全部，返回Map-->
+    <select id="findAllMap" resultType="java.util.Map">
+        SELECT *
+        FROM USER_CZH
+    </select>
+
+    <!--插入数据-->
+    <insert id="addUser" parameterType="com.entity.User">
+        insert into "USER_CZH" ("ID", "NAME", "AGE") values (#{id},#{name},#{age})
+    </insert>
+
+    <!--删除-->
+        <delete id="delUser" parameterType="int">
+            DELETE from "USER_CZH" where "ID"=#{id}
+        </delete>
+
+    <!--修改用户,传入多个参数-->
+    <update id="updUser">
+        update USER_CZH
+        set  name = #{name}
+        where "ID"=#{id}
+    </update>
+
+    <select id="findAdmin" resultType="java.util.Map">
+        select *
+        from "ADMIN_INFO"
+    </select>
+</mapper>
