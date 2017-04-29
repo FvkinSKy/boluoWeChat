@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="EclipseCodeFormatter">
+    <option name="defaultSettings" value="true" />
+    <option name="id" value="1493480408034" />
+    <option name="name" value="default" />
+  </component>
   <component name="EncodingComponent">
     <option name="projectEncoding" />
   </component>
   <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$USER_HOME$/Downloads/MybatisCase" />
     <file type="web" url="file://$PROJECT_DIR$/ springDemo01" />
     <file type="web" url="file://$PROJECT_DIR$/maven_test" />
     <file type="web" url="file://$PROJECT_DIR$/Servlet01" />
@@ -13,6 +19,7 @@
       <list>
         <option value="$PROJECT_DIR$/maven_test/pom.xml" />
         <option value="$PROJECT_DIR$/ springDemo01/pom.xml" />
+        <option value="$USER_HOME$/Downloads/MybatisCase/pom.xml" />
       </list>
     </option>
   </component>
